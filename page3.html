@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Matières Premières  Industrial_Platforme</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-content">
+            <a href="#" class="logo">IDPL</a>
+            <ul class="nav-links">
+                <li><a href="index.html" class="nav-link">Accueil</a></li>
+                <li><a href="page2.html" class="nav-link">Projets</a></li>
+                <li><a href="page3.html" class="nav-link">Matière Première</a></li>
+                <li><a href="page4.html" class="nav-link">Portefeuille</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <h1>Matières Premières</h1>
+
+        <form id="formVendreMatieres">
+            <div class="form-groupe">
+                <label>Nom de la Matière Première</label>
+                <input type="text" id="nomMatiere" required>
+            </div>
+
+            <div class="form-groupe">
+                <label>Quantité</label>
+                <input type="number" id="quantiteMatiere" required>
+            </div>
+
+            <div class="form-groupe">
+                <label>Localisation</label>
+                <input type="text" id="localisationMatiere" required>
+            </div>
+
+            <div class="form-groupe">
+                <label>Prix (ETH)</label>
+                <input type="number" id="prixMatiere" step="0.01" required>
+            </div>
+
+            <button type="submit">Vendre Matière Première</button>
+        </form>
+
+        <div id="listeMatieresPremiere">
+            <h2>Matières Premières Disponibles</h2>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/web3@1.5.2/dist/web3.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>

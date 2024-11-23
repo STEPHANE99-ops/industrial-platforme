@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Votre Projet de Tokenisation</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Lien vers votre fichier CSS -->
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-content">
+            <a href="#" class="logo">IDPL</a>
+            <ul class="nav-links">
+                <li><a href="index.html" class="nav-link">Accueil</a></li>
+                <li><a href="page2.html" class="nav-link">Projets</a></li>
+                <li><a href="page3.html" class="nav-link">Matière Première</a></li>
+                <li><a href="page4.html" class="nav-link">Portefeuille</a></li>
+            </ul>
+        </div>
+    </nav>
+    <section class="hero">
+        <div class="hero-content animate-fade-in">
+            <h1 class="hero-title">Solution de Tokenisation Innovante</h1>
+            <p class="hero-subtitle">Transformez vos actifs avec notre technologie blockchain de pointe</p>
+            <a href="#" class="cta-button">Commencer maintenant</a>
+            
+        </div>
+    </section>
+
+    <section class="features">
+        <div class="features-grid">
+            <div class="feature-card">
+                <h3>Sécurité Maximale</h3>
+                <p>Protection de vos actifs avec les dernières technologies </p>
+            </div>
+            <div class="feature-card">
+                <h3>Transactions Rapides</h3>
+                <p>Échanges instantanés et validation rapide des transactions</p>
+            </div>
+            <div class="feature-card">
+                <h3>Interface Intuitive</h3>
+                <p>Expérience utilisateur optimisée pour tous les niveaux d'expertise</p>
+            </div>
+        </div>
+    </section>
+    <section class="features">
+        <div class="metamask-container">
+            <button class="metamask-button" onclick="initWeb3()">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/3/36/MetaMask_Fox.svg" alt="MetaMask Logo" class="metamask-logo">
+              Connecter à MetaMask
+            </button>
+          </div>
+          
+          <style>
+          /* Conteneur pour centrer le bouton */
+          .metamask-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #f4f4f9;
+          }
+          
+          /* Style du bouton */
+          .metamask-button {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            background-color: #f6851b; /* Couleur MetaMask */
+            color: #fff;
+            font-size: 18px;
+            font-weight: bold;
+            border: none;
+            border-radius: 8px;
+            padding: 12px 24px;
+            cursor: pointer;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s, box-shadow 0.2s;
+          }
+          
+          /* Logo MetaMask */
+          .metamask-logo {
+            width: 24px;
+            height: 24px;
+          }
+          
+          /* Effet de survol */
+          .metamask-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+          }
+          
+          /* Effet de clic */
+          .metamask-button:active {
+            transform: translateY(1px);
+            box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+          }
+          </style>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/web3@1.5.2/dist/web3.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
+    

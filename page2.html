@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title> Projets Industrial_Platforme</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-content">
+            <a href="#" class="logo">IDPL</a>
+            <ul class="nav-links">
+                <li><a href="index.html" class="nav-link">Accueil</a></li>
+                <li><a href="page2.html" class="nav-link">Projets</a></li>
+                <li><a href="page3.html" class="nav-link">Matière Première</a></li>
+                <li><a href="page4.html" class="nav-link">Portefeuille</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <h1>Levée de Fonds</h1>
+
+        <form id="formLeverFonds">
+            <div class="form-groupe">
+                <label>Titre du Projet</label>
+                <input type="text" id="titreProjet" required>
+            </div>
+
+            <div class="form-groupe">
+                <label>Description</label>
+                <textarea id="descriptionProjet" required></textarea>
+            </div>
+
+            <div class="form-groupe">
+                <label>Montant (ETH)</label>
+                <input type="number" id="montantProjet" step="0.01" required>
+            </div>
+
+            <button type="submit">Lever des Fonds</button>
+        </form>
+
+        <div id="listeProjets">
+            <h2>Projets Existants</h2>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/web3@1.5.2/dist/web3.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
